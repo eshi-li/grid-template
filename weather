@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Weather app</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body">
+      <header>
+        <div class="header">
+          <div class="top-item">
+            <img src="assets/images/logo.svg" alt="him" class="logo" />
+
+            <button class="h-link">
+              <img src="assets/images/icon-units.svg" alt="images" />Units
+              <img src="assets/images/icon-dropdown.svg" alt="bleh" />
+            </button>
+          </div>
+          <div class="h-1"><h1>How's the sky looking today?</h1></div>
+        </div>
+      </header>
+      <section class="main">
+        <div class="container">
+          <div class="item-1">
+            <div class="grid-container">
+              <div class="box-1" style="grid-area: box-1">
+                <div class="h-box-1">
+                  <h2>Berlin, Germany</h2>
+                  <p>Tuesdsay Aug 5 2025</p>
+                </div>
+                <div class="logo-t">
+                  <img
+                    src="assets/images/icon-sunny.webp"
+                    class="img-1"
+                    alt="sunny"
+                  />
+                  <h1 class="big-h">20<sup>o</sup></h1>
+                </div>
+              </div>
+              <div class="box-2" style="grid-area: box-2">
+                <p>Feels like</p>
+                <h3>18<sup>o</sup></h3>
+              </div>
+              <div class="box-3" style="grid-area: box-3">
+                <p>Humidity</p>
+                <h3>46%</h3>
+              </div>
+              <div class="box-4" style="grid-area: box-4">
+                <p>Wind</p>
+                <h3>14 KM</h3>
+              </div>
+              <div class="box-5" style="grid-area: box-5">
+                <p>Precipitation</p>
+                <h3>0mm</h3>
+              </div>
+            </div>
+
+            <h2>Daily forcast</h2>
+            <div class="bottom-item">
+              <div class="box-6" id="b-boxes" style="grid-area: box-6">
+                <h4 class="content-H">tue</h4>
+                <img
+                  src="assets/images/icon-rain.webp"
+                  alt="rain"
+                  class="logo-3"
+                />
+                <h4 class="content-hd">
+                  <span>20<sup>o</sup> </span>
+                  <span>14<sup>o</sup></span>
+                </h4>
+              </div>
+
+              <div class="box-7" id="b-boxes" style="grid-area: box-7">
+                <h4 class="content-H">Wed</h4>
+                <img
+                  src="assets/images/icon-drizzle.webp"
+                  alt="drizzle"
+                  class="logo-3"
+                />
+                <h4 class="content-hd">
+                  <span>21<sup>o</sup> </span>
+                  <span>15<sup>o</sup></span>
+                </h4>
+              </div>
+
+              <div class="box-8" id="b-boxes" style="grid-area: box-8">
+                <h4 class="content-H">Thur</h4>
+                <img
+                  src="assets/images/icon-sunny.webp"
+                  alt="sunny"
+                  class="logo-3"
+                />
+                <h4 class="content-hd">
+                  <span>24<sup>o</sup> </span>
+                  <span>14<sup>o</sup></span>
+                </h4>
+              </div>
+
+              <div class="box-9" id="b-boxes" style="grid-area: box-9">
+                <h4 class="content-H">Fri</h4>
+                <img
+                  src="assets/images/icon-partly-cloudy.webp"
+                  alt="p cloudy"
+                  class="logo-3"
+                />
+                <h4 class="content-hd">
+                  <span>25<sup>o</sup> </span>
+                  <span>13<sup>o</sup></span>
+                </h4>
+              </div>
+
+              <div class="box-10" id="b-boxes" style="grid-area: box-10">
+                <h4 class="content-H">Sat</h4>
+                <img
+                  src="assets/images/icon-storm.webp"
+                  alt="stormy"
+                  class="logo-3"
+                />
+                <h4 class="content-hd">
+                  <span>21<sup>o</sup> </span>
+                  <span>15<sup>o</sup></span>
+                </h4>
+              </div>
+
+              <div class="box-11" id="b-boxes" style="grid-area: box-11">
+                <h4 class="content-H">sun</h4>
+                <img
+                  src="assets/images/icon-drizzle.webp"
+                  alt="drizzle"
+                  class="logo-3"
+                />
+                <h4 class="content-hd">
+                  <span>25<sup>o</sup> </span>
+                  <span>16<sup>o</sup></span>
+                </h4>
+              </div>
+
+              <div class="box-12" id="b-boxes" style="grid-area: box-12">
+                <h4 class="content-H">Mon</h4>
+                <img
+                  src="assets/images/icon-fog.webp"
+                  alt="fog"
+                  class="logo-3"
+                />
+                <h4 class="content-hd">
+                  <span>24<sup>o</sup> </span>
+                  <span>15<sup>o</sup></span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-2">
+          <div class="link-2">
+            <h2>hourly forcast</h2>
+            <div class="drop-down">
+              <button class="btn-2">
+                Tuesdsay <img src="assets/images/icon-dropdown.svg" alt="" />
+              </button>
+              <div class="btn-drop">
+                <a href="#" class="drop-1">Monday</a>
+                <a href="#" class="drop-1">Tuesday</a>
+                <a href="#" class="drop-1">Wednesday</a>
+                <a href="#" class="drop-1">Thursday</a>
+                <a href="#" class="drop-1">Friday</a>
+                <a href="#" class="drop-1">Saturday</a>
+                <a href="#" class="drop-1">Sunday</a>
+              </div>
+            </div>
+          </div>
+          <div class="side-grid">
+            <div id="content-2" style="grid-area: box-13">
+              <img
+                src="assets/images/icon-overcast.webp"
+                class="logo-2"
+                alt="0.1"
+              />
+              <h4 class="content-2">3 PM</h4>
+              <h5>68 <sup>o</sup></h5>
+            </div>
+            <div id="content-2" style="grid-area: box-14">
+              <img
+                src="assets/images/icon-partly-cloudy.webp"
+                alt="1"
+                class="logo-2"
+              />
+              <h4 class="content-2">4 PM</h4>
+              <h5>68<sup>o</sup></h5>
+            </div>
+            <div id="content-2" style="grid-area: box-15">
+              <img src="assets/images/icon-sunny.webp" alt="2" class="logo-2" />
+              <h4 class="content-2">5 PM</h4>
+              <h5>68<sup>o</sup></h5>
+            </div>
+            <div id="content-2" style="grid-area: box-16">
+              <img
+                src="assets/images/icon-overcast.webp"
+                alt="3"
+                class="logo-2"
+              />
+              <h4 class="content-2">6 PM</h4>
+              <h5>66<sup>o</sup></h5>
+            </div>
+            <div id="content-2" style="grid-area: box-17">
+              <img
+                src="assets/images/icon-drizzle.webp"
+                alt="4"
+                class="logo-2"
+              />
+              <h4 class="content-2">7 PM</h4>
+              <h5>66<sup>o</sup></h5>
+            </div>
+            <div id="content-2" style="grid-area: box-18">
+              <img src="assets/images/icon-fog.webp" alt="5" class="logo-2" />
+              <h4 class="content-2">8 PM</h4>
+              <h5>64<sup>o</sup></h5>
+            </div>
+            <div id="content-2" style="grid-area: box-19">
+              <img
+                src="assets/images/icon-drizzle.webp"
+                alt="6"
+                class="logo-2"
+              />
+              <h4 class="content-2">9 PM</h4>
+              <h5>63<sup>o</sup></h5>
+            </div>
+
+            <div id="content-2" style="grid-area: box-20">
+              <img
+                src="assets/images/icon-overcast.webp"
+                alt="8"
+                class="logo-2"
+              />
+              <h4 class="content-2">10 PM</h4>
+              <h5>63<sup>o</sup></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
